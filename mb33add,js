@@ -1,0 +1,12 @@
+function viralAdvertising(n) {
+      let  Shared=5, Liked=0,Cumulative=0
+      for(let i=1;i<=n;i++){
+          Liked=Math.floor(Shared/2);
+           Shared= Liked*3;
+              Cumulative+=Liked;
+
+      }
+    return Cumulative;
+
+}
+console.log(viralAdvertising(3) )
